@@ -3,12 +3,16 @@ function StringCalculator() {}
 StringCalculator.prototype.add = function(string_numbers) {
 
 	let value = 0;
+    let string_arr = string_numbers.split(',');
 
-    if(string_numbers.includes('3')){
-	    value = 2;
-    }
-	if(string_numbers.includes('5')){
-	    value = value + 4;
-    }
+    string_arr.forEach(char => {
+        if(char == '3'){
+            value += 2;
+        }
+        if(char == '5'){
+            value = value + 4;
+        }
+    });
+
     return value;
 };
