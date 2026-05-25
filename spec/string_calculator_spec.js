@@ -9,9 +9,9 @@ describe('String Calculator', function() {
 	it('should return 2 for [1, 2, 3]', function() {
 		expect(calculator.add('1,2,3')).toEqual(2);
 	});
-
-
-
+	it('should return 6 for [1, 2, 3, 4, 5]', function() {
+		expect(calculator.add('1,2,3,4,5')).toEqual(6);
+	});
 
 });
 
