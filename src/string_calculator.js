@@ -6,10 +6,12 @@ StringCalculator.prototype.add = function(string_numbers) {
     let string_arr = string_numbers.split(',');
 
     string_arr.forEach(char => {
-        if(char == '3'){
-            value += 2;
+        if(char == '3')
+		{
+            value =value + 2;
         }
-        if(char == '5'){
+        if(char == '5')
+		{
             value = value + 4;
         }
     });
