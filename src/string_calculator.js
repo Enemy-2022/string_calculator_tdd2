@@ -2,12 +2,13 @@
 function StringCalculator() {}
 StringCalculator.prototype.add = function(string_numbers) {
 
+	let value=0; 
     if(string_numbers.includes('3')){
-	    return 2;
+	    value = 2;
     }
-    else{
-        return 0;
+	if(string_numbers.includes('5')){
+	    value += 4;
     }
-
+   
+    return value;
 };
-
