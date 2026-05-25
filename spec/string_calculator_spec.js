@@ -12,6 +12,9 @@ describe('String Calculator', function() {
 	it('should return 6 for [1, 2, 3, 4, 5]', function() {
 		expect(calculator.add('1,2,3,4,5')).toEqual(6);
 	});
+	it('should return 12 for [ 3, 5, 3, 5, 4, 2 ]', function() {
+		expect(calculator.add('3,5,3,5,4,2')).toEqual(12);
+	});
 
 });
 
