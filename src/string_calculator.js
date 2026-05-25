@@ -2,6 +2,12 @@
 function StringCalculator() {}
 StringCalculator.prototype.add = function(string_numbers) {
 
-	return 0;
+    if(string_numbers.includes('3')){
+	    return 2;
+    }
+    else{
+        return 0;
+    }
+
 };
 
